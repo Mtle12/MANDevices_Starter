@@ -22,20 +22,20 @@ void main()
 		//tang khi nhan but 1
 		if (but1==0)
 		{
-			P2=so[i];
+			P2=so[i+1];
 			i++;
 			delay(500);
-			if(i>9){i=0;}
+			if(i>8){i=-1;}
 		}
 		
 
 		//giam khi nhan but2
 		if (but2==0)
 		{	
-			P2=so[i];
+			P2=so[i-1];
 			i--;
 			delay(500);
-			if(i<0){i=9;}
+			if(i<1){i=10;}
 		
 		}
 		
